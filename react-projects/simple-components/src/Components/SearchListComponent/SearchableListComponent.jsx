@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import SearchComponent from './SearchComponent';
 import ListComponent from './ListComponent';
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import './MainComponent.css';
+import './RecordDisplayerComponent.css';
 import SearchableListComponent from '../SearchListComponent/SearchableListComponent';
 import { getTodoTasks } from '../../Helpers/DataProvider';
 
 const FETCH_DATA_MSG = "Click Fetch data button to see some records";
 
-class MainComponent extends React.Component {
+class RecordDisplayerComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = { items: [], isSpinnerVisible: false };
@@ -42,4 +42,4 @@ class MainComponent extends React.Component {
     }
 }
 
-export default MainComponent;
+export default RecordDisplayerComponent;

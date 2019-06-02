@@ -1,0 +1,30 @@
+.data-table{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    border-collapse: collapse;
+  }
+  .info-text{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+    text-align: center;
+  }
+  .data-row{
+    border: 1px solid black;
+  }
+  .search-bar{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+  #table-settings{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+  }
+  #max-rows{
+    width: 30px;
+  }

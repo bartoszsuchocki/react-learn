@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {HSearchableListComponent} from './Components/SearchListUsingHooksComponent/HSearchableListComponent';
+import {RecordDisplayerComponent} from './Components/RecordDisplayerUsingHooksComponent/HRecordDisplayerComponent';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<HSearchableListComponent />, document.getElementById('root'));
+ReactDOM.render(<RecordDisplayerComponent />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

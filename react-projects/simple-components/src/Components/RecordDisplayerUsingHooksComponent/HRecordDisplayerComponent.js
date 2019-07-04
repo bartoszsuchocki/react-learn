@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './HRecordDisplayerComponent.css'
+import './HRecordDisplayerComponent.scss'
 import { getTodoTasks } from '../../Helpers/DataProvider';
 import { SearchableListComponent } from '../SearchListUsingHooksComponent/HSearchableListComponent'
 
@@ -23,18 +23,18 @@ export function RecordDisplayerComponent(props) {
     
     if (items == null) {
         listContent = (
-            <div className="info-container">{FETCH_DATA_MSG}</div>
+            <div className="container container--info">{FETCH_DATA_MSG}</div>
         );
     }
     else {
         listContent = spinnerVisible
-            ? <div className="spinner-container"><div className="spinner"></div></div>
+            ? <div className="container container--spinner"><div className="spinner"></div></div>
             : <SearchableListComponent items={items} />;
     }
 
     return (
-        <div id="container">
-            <button id="fetch-button" onClick={handleDataReload}>Fetch data</button>
+        <div className="container">
+            <button className="fetch-button" onClick={handleDataReload}>Fetch data</button>
             {listContent}
         </div>
     );

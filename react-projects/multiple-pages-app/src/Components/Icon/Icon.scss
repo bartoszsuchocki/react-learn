@@ -1,0 +1,41 @@
+@import '../../GlobalStyleVariables.scss';
+
+@media screen and (max-width: $mobile-width-boundary + 1) {
+    
+    .icon{
+        &--img-placeholder{
+            width: $mobile-img-placeholder-icon-width;
+            height: $mobile-img-placeholder-icon-height;
+        }
+
+        &--main-bg{
+            display: inline-block;
+            width: $mobile-main-bg-icon-width;
+            height: $mobile-main-bg-icon-height;
+        }
+
+        &--menu{
+            width: $mobile-menu-icon-width;
+            height: $mobile-menu-icon-height;
+        }
+    }
+}
+
+@media screen and (min-width: $mobile-width-boundary + 1) {
+    .icon{
+        &--img-placeholder{
+            width: $desktop-img-placeholder-icon-width;
+            height: $desktop-img-placeholder-icon-height;
+        }
+        
+        &--main-bg{
+            width: $desktop-main-bg-icon-width;
+            height: $desktop-main-bg-icon-height;
+        }
+
+        &--menu{
+            width: $desktop-menu-icon-width;
+            height: $desktop-menu-icon-height;
+        }
+    }
+}

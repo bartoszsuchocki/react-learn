@@ -1,0 +1,36 @@
+@import '../../GlobalStyleVariables.scss';
+
+.creation-block{
+    &__logo-section{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 210px;
+        width: 100%;
+        background: linear-gradient(23.67deg, #E0F9E7 20.33%, #8CE7A6 40.48%, #8CE7A6 56.3%, #FFFFFF 72.86%, #6EE18E 91.09%);
+
+        &--image-placeholder{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            width: 210px;
+            height: 180px;
+            background: #FFFFFF;
+            border: 3px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+
+    }
+
+    &__info-section{
+        margin: 0 4%;
+        
+        &--row{
+            margin-top: 30px;
+        }
+    }
+}

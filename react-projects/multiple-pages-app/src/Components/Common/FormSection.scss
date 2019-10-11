@@ -1,0 +1,21 @@
+@import '../../GlobalStyleVariables.scss';
+
+.form-section{
+    &__title-block{
+        display: flex;
+
+        &--title{
+            display: flex;
+            align-items: center;
+            margin: 0 6%;
+            font: normal normal 22px Roboto;
+            line-height: 24px;
+        }
+    }
+
+    &__content-block{
+        margin-top: 20px;
+    }
+
+
+}

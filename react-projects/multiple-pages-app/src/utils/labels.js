@@ -1,0 +1,33 @@
+const labels = {
+    ADDITIONAL_INFO : 'Dodatkowe informacje',
+    CATEGORY : 'Kategoria',
+    CONTACT : 'Kontakt',
+    DESCRIPTION : 'Opis',
+    EMAIL_ADDRESS : 'Adres e-mail',
+    FROM : 'Od',
+    H_PER_WEEK_SHORTCUT : 'h/tydz.',
+    MAIL : 'Mail',
+    NAME: 'Nazwa',
+    OFFER_ADVERTISEMENT_TITLE : 'Tytuł ogłoszenia',
+    OFFER_BASIC_INFO : 'Podstawowe informacje',
+    OFFER_DESCRIPTION_OF_DUTIES : 'Jednozdaniowy opis czynności do wykonania',
+    OFFER_FULL_DESCRIPTION : 'Pełny opis',
+    OFFER_ORGANIZATION_NAME : 'Nazwa organizacji',
+    OFFER_ADVERTISEMENT_EXPIRY : 'Ważność ogłoszenia',
+    OFFER_EXPIRY_TO : 'Ważne do',
+    OFFER_EXPIRY_PREFIX : 'Zapisy do',
+    OFFER_REQUIREMENTS_FIELD_LABEL : 'Jakie warunki powinien spełniać wolontariusz',
+    OFFER_SHORT_DESCRIPTION : 'Krótki opis',
+    OFFER_VOLOUNTEER_TIME_ENGAGEMENT : 'Zaangażowanie czasowe wolontariusza',
+    OFFER_VOLOUNTEER_AGE : 'Wiek wolontariusza',
+    OFFER_VOLUNTARY_DESCRIPTION : 'Opis wolontariatu',
+    OTHER : 'Inne',
+    OTHER_INFO: 'Pozostałe informacje',
+    PHONE_NUMBER : 'Numer telefonu',
+    PHONE : 'Telefon',
+    REQUIREMENTS : 'Wymagania',
+    TITLE : 'Tytuł',
+    TO: 'Do'
+};
+
+export default labels;

@@ -1,5 +1,6 @@
 const labels = {
     ADDITIONAL_INFO : 'Dodatkowe informacje',
+    CANCEL : 'Anuluj',
     CATEGORY : 'Kategoria',
     CONTACT : 'Kontakt',
     DESCRIPTION : 'Opis',
@@ -26,6 +27,7 @@ const labels = {
     PHONE_NUMBER : 'Numer telefonu',
     PHONE : 'Telefon',
     REQUIREMENTS : 'Wymagania',
+    SAVE: 'Zapisz',
     TITLE : 'Tytuł',
     TO: 'Do'
 };

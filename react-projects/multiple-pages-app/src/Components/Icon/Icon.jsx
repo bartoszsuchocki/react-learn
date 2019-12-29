@@ -169,12 +169,6 @@ export const MainBgIcon = ({icon}) => {
 }
 
 export const MenuIcon = ({icon}) => {
-    // return (
-    //     <Icon
-    //         defaultSource="../../assets/icons/menu-icon.png"
-    //         minWidthToSourceMap={{501: '../../assets/icons/menu-icon.png'}}
-    //     />
-    // )
     return (
         <div className="icon--menu">
             {icons[icon]}

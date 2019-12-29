@@ -21,8 +21,6 @@ const initialNavigationItems = [
   {label: navigationItemsLabels.LOGIN, path: '/login'}
 ];
 
-
-
 function App() {
 
   const [activeItemLabel, setActiveItemLabel] = useState(navigationItemsLabels.OFFER_SEARCH);
@@ -49,11 +47,12 @@ function App() {
       <div style={{overflowY: "scroll"}}>
       <Route exact path="/" component={OfferSearch} />
       <Route path="/offer" component={OfferCreation} />
+      {/* just a sample cropper usage stub */}
       <Route 
         path="/crop" 
         render={() => (
           <ImageCropper
-            image="logo-szlachetna-paczka.png"
+            image="szlachetna-paczka-big.png"
             initialAspect={4/3}
             initialCrop={{x : 0, y : 0}}
             initialZoom={1}

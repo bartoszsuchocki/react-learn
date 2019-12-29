@@ -1,31 +1,56 @@
 import React, {useState} from 'react';
-import Cropper from 'react-easy-crop'
+import AvatarEditor from 'react-avatar-editor';
+import './ImageCropper.scss'
+import { Button } from 'react-bootstrap';
+import labels from '../../../utils/labels';
 
 
 const ImageCropper = ({image, initialAspect, initialCrop, initialZoom}) => {
 
-    const [aspect, setAspect] = useState(initialAspect);
-    const [crop, setCrop] = useState(initialCrop);
-    const [zoom, setZoom] = useState(initialZoom);
+    let cropEditor;
 
-    const onCropComplete = (croppedArea, croppedAreaPixels) => {
-        console.log(croppedArea, croppedAreaPixels);
+    const handleSave = () => {
+        if(cropEditor){
+            const canvasScaled = cropEditor.getImageScaledToCanvas();
+            canvasScaled.toBlob((blob) => {
+                const cropUrl = URL.createObjectURL(blob);
+                console.log('new crop url: ' + cropUrl);
+            });
+        }
     }
 
     return (
-        <Cropper
-            image={image}
-            crop={crop}
-            cropSize={{width: 100, height: 100}}
-            zoom={zoom}
-            aspect={aspect}
-            onCropChange={newCrop => setCrop(newCrop)}
-            onCropComplete={onCropComplete}
-            onZoomChange={newZoom => setZoom(newZoom)}
-            style={{cropAreaStyle: {borderRadius: "2px"}}}
-        />
+        <div>
+            <div className="cropper-container">
+                <AvatarEditor
+                    border={[82,10]}
+                    borderRadius={10}
+                    className="cropper"
+                    image={image}
+                    ref={editor => cropEditor = editor}
+                    rotate={0}
+                    scale={1}
+                />
+            </div>
+            <div className="save-button-container">
+                <Button 
+                    className="button" 
+                    size="lg" 
+                    variant="primary"
+                >
+                    { labels.CANCEL }
+                </Button>
+                <Button 
+                    className="button" 
+                    onClick={handleSave}
+                    size="lg" 
+                    variant="success"
+                >
+                    { labels.SAVE }
+                </Button>
+            </div>
+            
+        </div>
     )
-
-
 }
 export default ImageCropper;

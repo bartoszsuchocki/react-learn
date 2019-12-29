@@ -1,0 +1,73 @@
+@import '../../GlobalStyleVariables.scss';
+
+.offer-card-container{
+    padding-top: 10%;   
+}
+.offer-card{
+    width: 84%;
+    min-height: 390px;
+    margin: 0 8%;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+
+    &__logo-section{
+        height: 240px;
+        background: linear-gradient(23.67deg, #E0F9E7 20.33%, #8CE7A6 40.48%, #8CE7A6 56.3%, #FFFFFF 72.86%, #6EE18E 91.09%);
+        box-sizing: border-box;
+        border: 1px solid $secondary-color;
+        border-radius: 10px 10px 0px 0px;
+
+        &--title{
+            font: bold normal 18px Roboto; 
+            line-height: 21px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    &__logo-placeholder-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    &__logo-placeholder{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+
+        width: 210px;
+        height: 180px;
+        margin-left: 20%;
+        margin-right: 20%;
+
+        background: #FFFFFF;
+        border: 3px solid #FFFFFF;
+        border-radius: 30px;
+    }
+
+    &__logo-container{
+        width: 180px;
+        height: 150px;
+    }
+    
+    &__description-section{
+        height: 150px;
+        margin: 10px 0px 0px 30px;
+    }
+
+    &__description-line{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &--description{
+            margin-left: 20px;
+            text-align: left;
+        }
+
+    }
+
+}

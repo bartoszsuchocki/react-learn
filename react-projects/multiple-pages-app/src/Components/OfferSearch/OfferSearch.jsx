@@ -20,8 +20,6 @@ const OfferSearch = (props) => {
                 title='szlachetna paczka'
             />
         </div>
-
-        
     );
 
 }
